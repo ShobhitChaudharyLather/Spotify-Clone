@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <i class="fab fa-spotify"></i>
+                <span>Spotify</span>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><i class="fas fa-home"></i> Home</li>
+                    <li><i class="fas fa-search"></i> Search</li>
+                    <li><i class="fas fa-book"></i> Your Library</li>
+                </ul>
+            </nav>
+            <div class="playlists">
+                <h3>PLAYLISTS</h3>
+                <ul>
+                    <li><i class="fas fa-plus"></i> Create Playlist</li>
+                    <li><i class="fas fa-heart"></i> Liked Songs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="What do you want to listen to?">
+                </div>
+                <div class="user-profile">
+                    <span>Premium</span>
+                    <span>Support</span>
+                    <span>Download</span>
+                    <div class="profile">
+                        <img src="https://via.placeholder.com/32" alt="Profile">
+                    </div>
+                </div>
+            </header>
+
+            <div class="content">
+                <div class="greeting">
+                    <h1>Good afternoon</h1>
+                </div>
+                <div class="recently-played">
+                    <h2>Recently played</h2>
+                    <div class="grid">
+                        <!-- Playlist cards will be added dynamically -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Player -->
+        <div class="player">
+            <div class="now-playing">
+                <img src="https://via.placeholder.com/56" alt="Album Art">
+                <div class="song-info">
+                    <h4>No song selected</h4>
+                    <p>Select a song to play</p>
+                </div>
+                <i class="far fa-heart"></i>
+            </div>
+            <div class="player-controls">
+                <div class="controls">
+                    <i class="fas fa-random" id="shuffleButton"></i>
+                    <i class="fas fa-step-backward" id="previousButton"></i>
+                    <i class="fas fa-play-circle" id="playButton"></i>
+                    <i class="fas fa-step-forward" id="nextButton"></i>
+                    <i class="fas fa-redo" id="repeatButton"></i>
+                </div>
+                <div class="progress-bar">
+                    <span id="currentTime">0:00</span>
+                    <div class="progress" id="progressBar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span id="duration">0:00</span>
+                </div>
+            </div>
+            <div class="volume-controls">
+                <i class="fas fa-volume-up" id="volumeIcon"></i>
+                <div class="volume-bar" id="volumeBar">
+                    <div class="volume-fill" id="volumeFill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
